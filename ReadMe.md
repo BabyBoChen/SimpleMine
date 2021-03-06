@@ -3,7 +3,7 @@
 3. (done)每個按鈕點擊後會在console裡面print出這個按鈕的座標
 4. (done)座標以最左上角的按鈕為原點(0,0)
 5. (done)參考"地雷位置筆記.xlsx"，先想一想要把地雷放在哪。現在先把地雷位置寫死，之後可以再想辦法用Random類別來產生隨機地雷位置
-6. (done)在Form1.cs裡面宣告一個類別變數minePosition並建立一個List<bool>物件
+6. (done)在Form1.cs裡面宣告一個類別變數minePosition並建立一個"List<bool>"物件
 7. (done)在每個private void buttonX_Click(object sender, EventArgs e)裡面用console print出每個button對應的minePostion是不是true
 8. 為所有按鈕建立一個List來記錄每個按鈕的所有相鄰按鈕。不過，因為我們只關心相鄰按鈕是不是地雷，或有幾個地雷，因此這個List裡面只需要裝「相鄰按鈕對應的minePostion」即可。例如：
 
