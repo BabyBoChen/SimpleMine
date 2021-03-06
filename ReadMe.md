@@ -7,7 +7,8 @@
 7. (done)在每個private void buttonX_Click(object sender, EventArgs e)裡面用console print出每個button對應的minePostion是不是true
 8. 為所有按鈕建立一個List來記錄每個按鈕的所有相鄰按鈕。不過，因為我們只關心相鄰按鈕是不是地雷，或有幾個地雷，因此這個List裡面只需要裝「相鄰按鈕對應的minePostion」即可。例如：
 
-  List<bool> btn1NearByBtns = new List<bool>(){minePosition[1], minePosition[5], minePosition[6] };
+  List<bool> btn1NearByBtns = new List<bool>(){minePosition[1], minePosition[5], minePosition[6] };    
+  
   List<bool> btn2NearByBtns = new List<bool>(){minePosition[0], minePosition[2], minePosition[5], minePosition[6], minePosition[7] };...以此類推。
 
 9. private void button1_Click(object sender, EventArgs e)裡面定義的是button1被按之後會觸發的反應。如果要讓button1被按了之後能print出週邊有幾個地雷，就只需要先計算btn1NearByBtns裡面有"幾個true"，再把數字用console print出來即可。這樣是不是很聰明R？
