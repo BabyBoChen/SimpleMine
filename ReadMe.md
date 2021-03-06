@@ -1,4 +1,4 @@
----------------------------------------------------------------Form1.cs.old
+---------------------------------------------------------------Form1.cs.old、Form1.designer.cs.old
 1. (done)先建立一個Windows Form App
 2. (done)在上面放25個按鈕
 3. (done)每個按鈕點擊後會在console裡面print出這個按鈕的座標
@@ -15,7 +15,7 @@
 9. (done)private void button1_Click(object sender, EventArgs e)裡面定義的是button1被按之後會觸發的反應。如果要讓button1被按了之後能print出週邊有幾個地雷，就只需要先計算btn1NearByBtns裡面有"幾個true"，再把數字用console print出來即可。這樣是不是很聰明R？
 10. (done)在private void button2_Click(object sender, EventArgs e)計算btn2NearByBtns裡面有幾個true、在private void button3_Click(object sender, EventArgs e)計算btn3NearByBtns裡面有幾個true...以此類推。
 
----------------------------------------------------------------Form1.cs.old
+---------------------------------------------------------------Form1.cs.old、Form1.designer.cs.old
 
 11. 在Form1.cs裡面再宣告一個欄位（物件變數）btnIndex並建立一個List\<string\>物件，將25個button的名字（字串）放到這個List裡面{"button1", "button2", "button3" ..., "button25"};
 12. 接著再宣告一個欄位nearByBtnMines，並建立一個空的List\<List\<bool\>\>物件（List裡面還有List），先不要放任何東西進去。
