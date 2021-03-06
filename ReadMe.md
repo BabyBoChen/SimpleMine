@@ -1,3 +1,4 @@
+---------------------------------------------------------------Form.cs.old
 1. (done)先建立一個Windows Form App
 2. (done)在上面放25個按鈕
 3. (done)每個按鈕點擊後會在console裡面print出這個按鈕的座標
@@ -13,8 +14,6 @@
 
 9. private void button1_Click(object sender, EventArgs e)裡面定義的是button1被按之後會觸發的反應。如果要讓button1被按了之後能print出週邊有幾個地雷，就只需要先計算btn1NearByBtns裡面有"幾個true"，再把數字用console print出來即可。這樣是不是很聰明R？
 10. 在private void button2_Click(object sender, EventArgs e)計算btn2NearByBtns裡面有幾個true、在private void button3_Click(object sender, EventArgs e)計算btn3NearByBtns裡面有幾個true...以此類推。
+---------------------------------------------------------------Form.cs.old
 
-
-下一步來把25個private void buttonX_Click(object sender, EventArgs e)通通合併成一個，妳說好不好？
-
-private void buttonX_Click(object sender, EventArgs e)：這個東西通常會稱作"event handler"或是"callback"，就是當某個事件（event）發生後會觸發的事情。
+11.
