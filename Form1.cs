@@ -54,7 +54,20 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[1], minePosition[5], minePosition[6] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button1.Text = nearByMines.ToString();
+                button1.Enabled = false;
+
             }
         }
 
@@ -67,7 +80,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[0], minePosition[2], minePosition[5], minePosition[6], minePosition[7] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button2.Text = nearByMines.ToString();
+                button2.Enabled = false;
             }
         }
 
@@ -80,7 +105,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[1], minePosition[3], minePosition[6], minePosition[7], minePosition[8] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button3.Text = nearByMines.ToString();
+                button3.Enabled = false;
             }
         }
 
@@ -93,7 +130,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[2], minePosition[4], minePosition[7], minePosition[8], minePosition[9] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button4.Text = nearByMines.ToString();
+                button4.Enabled = false;
             }
         }
 
@@ -106,7 +155,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[3], minePosition[8], minePosition[9] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button5.Text = nearByMines.ToString();
+                button5.Enabled = false;
             }
         }
 
@@ -119,7 +180,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[0], minePosition[1], minePosition[6], minePosition[10], minePosition[11] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button6.Text = nearByMines.ToString();
+                button6.Enabled = false;
             }
         }
 
@@ -132,7 +205,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[0], minePosition[1], minePosition[2], minePosition[5], minePosition[7], minePosition[10], minePosition[11], minePosition[12] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button7.Text = nearByMines.ToString();
+                button7.Enabled = false;
             }
         }
 
@@ -145,7 +230,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[1], minePosition[2], minePosition[3], minePosition[6], minePosition[8], minePosition[11], minePosition[12], minePosition[13] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button8.Text = nearByMines.ToString();
+                button8.Enabled = false;
             }
         }
 
@@ -158,7 +255,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[2], minePosition[3], minePosition[4], minePosition[7], minePosition[9], minePosition[12], minePosition[13], minePosition[14] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button9.Text = nearByMines.ToString();
+                button9.Enabled = false;
             }
         }
 
@@ -171,7 +280,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[3], minePosition[4], minePosition[8], minePosition[13], minePosition[14]};
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button10.Text = nearByMines.ToString();
+                button10.Enabled = false;
             }
         }
 
@@ -184,7 +305,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[5], minePosition[6], minePosition[11], minePosition[15], minePosition[16] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button11.Text = nearByMines.ToString();
+                button11.Enabled = false;
             }
         }
 
@@ -197,7 +330,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[5], minePosition[6], minePosition[7], minePosition[10], minePosition[12], minePosition[15], minePosition[16], minePosition[17] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button12.Text = nearByMines.ToString();
+                button12.Enabled = false;
             }
         }
 
@@ -210,7 +355,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[6], minePosition[7], minePosition[8], minePosition[11], minePosition[13], minePosition[16], minePosition[17], minePosition[18] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button13.Text = nearByMines.ToString();
+                button13.Enabled = false;
             }
         }
 
@@ -223,7 +380,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[7], minePosition[8], minePosition[9], minePosition[12], minePosition[14], minePosition[17], minePosition[18], minePosition[19] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button14.Text = nearByMines.ToString();
+                button14.Enabled = false;
             }
         }
 
@@ -236,7 +405,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[8], minePosition[9], minePosition[13], minePosition[18], minePosition[19] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button15.Text = nearByMines.ToString();
+                button15.Enabled = false;
             }
         }
 
@@ -249,7 +430,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[10], minePosition[11], minePosition[16], minePosition[20], minePosition[21] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button16.Text = nearByMines.ToString();
+                button16.Enabled = false;
             }
         }
 
@@ -262,7 +455,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[10], minePosition[11], minePosition[12], minePosition[15], minePosition[17], minePosition[20], minePosition[21], minePosition[22] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button17.Text = nearByMines.ToString();
+                button17.Enabled = false;
             }
         }
 
@@ -275,7 +480,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[11], minePosition[12], minePosition[13], minePosition[16], minePosition[18], minePosition[21], minePosition[22], minePosition[23] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button18.Text = nearByMines.ToString();
+                button18.Enabled = false;
             }
         }
 
@@ -288,7 +505,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[12], minePosition[13], minePosition[14], minePosition[17], minePosition[19], minePosition[22], minePosition[23], minePosition[24] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button19.Text = nearByMines.ToString();
+                button19.Enabled = false;
             }
         }
 
@@ -301,7 +530,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[13], minePosition[14], minePosition[18], minePosition[23], minePosition[24] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button20.Text = nearByMines.ToString();
+                button20.Enabled = false;
             }
         }
 
@@ -314,7 +555,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[15], minePosition[16], minePosition[21] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button21.Text = nearByMines.ToString();
+                button21.Enabled = false;
             }
         }
 
@@ -327,7 +580,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[15], minePosition[16], minePosition[17], minePosition[20], minePosition[22] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button22.Text = nearByMines.ToString();
+                button22.Enabled = false;
             }
         }
 
@@ -340,7 +605,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[16], minePosition[17], minePosition[18], minePosition[21], minePosition[23] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button23.Text = nearByMines.ToString();
+                button23.Enabled = false;
             }
         }
 
@@ -353,7 +630,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[17], minePosition[18], minePosition[19], minePosition[22], minePosition[24] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button24.Text = nearByMines.ToString();
+                button24.Enabled = false;
             }
         }
 
@@ -366,7 +655,19 @@ namespace SimpleMine
             }
             else
             {
+                var nearByBtns = new List<bool>() { minePosition[18], minePosition[19], minePosition[23] };
+                int nearByMines = 0;
+                foreach (var isMine in nearByBtns)
+                {
+                    if (isMine == true)
+                    {
+                        nearByMines++;
+                    }
+                }
                 Console.WriteLine("沒事...");
+                Console.WriteLine($"週邊有{nearByMines}個地雷...");
+                button25.Text = nearByMines.ToString();
+                button25.Enabled = false;
             }
         }
     }
