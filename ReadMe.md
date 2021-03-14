@@ -19,6 +19,8 @@
 
 
 ---------------------------------------------------------------Form1.cs、Form1.designer.cs
+
+
 11. (done)在Form1.cs裡面再宣告一個欄位（物件變數）btnIndex並建立一個List\<string\>物件，將25個button的名字（字串）放到這個List裡面{"button1", "button2", "button3" ..., "button25"};
 12. (done)接著再宣告一個欄位nearByBtnMines，並建立一個空的List\<List\<bool\>\>物件（List裡面還有List），先不要放任何東西進去。
 13. (done)然後在Form1的建構式public Form1(){}裡面，（在InitializeComponent();之後）用nearByBtnMines.Add(引數)這個方法，把每個按鈕的相鄰按鈕對應的minePostion加進nearByBtnMines這個List中。
