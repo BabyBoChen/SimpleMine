@@ -17,13 +17,20 @@
 
 ---------------------------------------------------------------Form1.cs.old、Form1.designer.cs.old
 
+
+---------------------------------------------------------------Form1.cs、Form1.designer.cs
 11. (done)在Form1.cs裡面再宣告一個欄位（物件變數）btnIndex並建立一個List\<string\>物件，將25個button的名字（字串）放到這個List裡面{"button1", "button2", "button3" ..., "button25"};
 12. (done)接著再宣告一個欄位nearByBtnMines，並建立一個空的List\<List\<bool\>\>物件（List裡面還有List），先不要放任何東西進去。
 13. (done)然後在Form1的建構式public Form1(){}裡面，（在InitializeComponent();之後）用nearByBtnMines.Add(引數)這個方法，把每個按鈕的相鄰按鈕對應的minePostion加進nearByBtnMines這個List中。
 14. (done)接著先進到表單編輯模式，把每個按鈕的Click事件要觸發的方法（目前會是buttonX_Click）全部刪掉，變成空白。（在每個屬性視窗裡面的閃電頁簽中找"Click"這個項目就會看到buttonX_Click，把他刪掉！）
 15. (done)接著就可以把Form1.cs裡面的25個private void buttonX_Click(object sender, EventArgs e)全部刪掉囉！
-16. 把原本寫死的List\<bool\> minePostion = new List\<bool\> (){true,true,false,...}拿掉，只保留宣告欄位（物件變數）的部分（private List\<bool\> minePostion;）。
-17. 定義一個新的方法private List\<bool\> setMines(int howManyMines)，用隨機的方式取代原本的List\<bool\> minePostion。
-18. 記得要在建構式中呼叫minePostion = setMines(10);才會執行setMines並將這個方法產生的地雷位置清單（List\<bool\>）傳給minePostion這個變數名稱哦！
+
+16. 建立一個新的方法private void btn_Click(object sender, EventArgs e)。
+17. 再回到表單編輯模式，把每個按鈕的Click事件要觸發的方法（目前會是空白）改成我們新建立的方法btn_Click。
+18. 在private void btn_Click(object sender, EventArgs e)裡面，用var btn = (Button)sender;就可以得到被按的按鈕物件。接著用btn.Name屬性和btnIndex來比對，找出被按的按鈕是第幾個按鈕，再進而從minePostion中比對出被按的按鈕是不是地雷，然後再從nearByBtnMines比對出被按的按鈕的相鄰按鈕有哪些是地雷。
+
+19. 把原本寫死的List\<bool\> minePostion = new List\<bool\> (){true,true,false,...}拿掉，只保留宣告欄位（物件變數）的部分（private List\<bool\> minePostion;）。
+20. 定義一個新的方法private List\<bool\> setMines(int howManyMines)，用隨機的方式取代原本的List\<bool\> minePostion。
+21. 記得要在建構式中呼叫minePostion = setMines(10);才會執行setMines並將這個方法產生的地雷位置清單（List\<bool\>）傳給minePostion這個變數名稱哦！
 
 
